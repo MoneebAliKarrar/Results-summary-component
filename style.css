@@ -13,22 +13,22 @@ body{
 .theResult{
     background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%))  ;
     width: 25%;
-    height: 55%;
+    height: 50%;
     border-radius: 1.2rem;
 }
 .theResult h1{
     text-align: center;
     color: white;
-    font-size: 1rem;
+    font-size: 100%;
     font-weight: normal;
     margin: 1.2rem;
 }
 .score{
     text-align: center;
-    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+    background-color: hsla(256, 72%, 46%, 1);
     width: 40%;
-    height: 40%;
-    border-radius: 50%;
+    height: 40%; /* Set the height to the same value as width for a perfect circle */
+    border-radius: 50%; /* Ensure the container is a circle */
     margin: auto;
     color: white;
     display: flex;
@@ -37,15 +37,18 @@ body{
     justify-content: center;
 }
 #yourscore{
-    font-size: 3rem;
+    font-size: 300%;
     margin: 0;
     font-weight: bold;
-    height: 45%;
+    height: 55%;
+    
 }
 .maxscore{
     font-size: .8rem;
-    margin :0;
+    margin-bottom :1rem;
     font-weight: 200;
+    width: 100%;
+   
 }
 .theResult h2{
     color: white ;
@@ -62,9 +65,8 @@ body{
 }
 .summary{
     width: 25%;
-    height: 50%;
+    height: 45%;
     padding: 1rem;
-    
     box-shadow: 0 1rem 6rem 0 rgba(63, 43, 134, 0.2);
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -95,9 +97,10 @@ body{
     display: block;
     margin: .7rem 0rem;
     width: 90%;
-    height: 1.7rem;
+    height: 12%;
     border-radius: .4rem;
     padding :.4rem;
+    
     
 }
 .reaction{
