@@ -2,6 +2,10 @@
     font-family: Hanken Grotesk;
     src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     display: flex;
     justify-content: center;
@@ -12,40 +16,46 @@ body{
 }
 .theResult{
     background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%))  ;
-    width: 25%;
-    height: 50%;
-    border-radius: 1.2rem;
+    width: 300px;
+    border-radius: 1.2em;
 }
 .theResult h1{
     text-align: center;
     color: white;
     font-size: 100%;
     font-weight: normal;
-    margin: 1.2rem;
+    margin : 10% 0em;
 }
 .score{
     text-align: center;
-    background-color: hsla(256, 72%, 46%, 1);
-    width: 40%;
-    height: 40%; /* Set the height to the same value as width for a perfect circle */
-    border-radius: 50%; /* Ensure the container is a circle */
-    margin: auto;
-    color: white;
+    background-image:linear-gradient(to top,hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    width: 90px;   
+    border-radius: 50%; 
+    margin:0 auto;
+    color: #ffffff;
+    padding: 1.3em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 #yourscore{
-    font-size: 300%;
+    font-size: 3em;
     margin: 0;
     font-weight: bold;
     height: 55%;
     
 }
+#circle-max-score{
+    font-size: .8em;
+    margin-bottom :.8em;
+    font-weight: 100;
+    width: 100%;
+
+}
 .maxscore{
-    font-size: .8rem;
-    margin-bottom :1rem;
+    font-size: .8em;
+    margin-bottom :1em;
     font-weight: 200;
     width: 100%;
    
@@ -53,53 +63,49 @@ body{
 .theResult h2{
     color: white ;
     text-align: center;
-    margin: .5rem;
+    margin: .7em 0em;
 }
 .theResult p{
     color: white;
     text-align: center;
-    margin: 0rem 4rem;
-    font-size: .9rem;
+    margin: 0em 4em 15%;
+    font-size: .9em;
     font-weight:200;
 
 }
 .summary{
-    width: 25%;
-    height: 45%;
-    padding: 1rem;
-    box-shadow: 0 1rem 6rem 0 rgba(63, 43, 134, 0.2);
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    margin-left: -0.4rem;
+    width: 300px;
+    padding: 1em;
+    box-shadow: 0 1em 6em 0 rgba(63, 43, 134, 0.2);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    margin-left: -0.4em;
+    box-sizing: border-box;
 }
 .summary h1{
-    font-size: 1rem;
-    margin-bottom : .4rem;
-    margin-left: 10%;
-    margin-top: .7rem;
+    font-size: 1em;
+    margin : .5em .4rem;
 }
 .summary table{
     border-collapse: collapse;
     width: 90%;
-    margin: 0rem 10%;
     
 }
 .summary th{
-    font-size: 1rem;
+    font-size: 1em;
     width: 75%;
     text-align: left;
-    padding-left: .7rem;
+    padding-left: .7em;
 }
 .summary td{
     width: 18%;
 }
 .summary tr{
     display: block;
-    margin: .7rem 0rem;
-    width: 90%;
-    height: 12%;
-    border-radius: .4rem;
-    padding :.4rem;
+    margin: 1em .3em;
+    width: 100%;
+    border-radius: .4em;
+    padding :.6em;
     
     
 }
@@ -112,11 +118,11 @@ body{
 .reaction th::before{
     content: '';
     display: inline-block;
-    width: 1.2rem;
-    height: 1.2rem; 
+    width: 1.1em;
+    height: 1.1em; 
     background: url('./assets/images/icon-reaction.svg') no-repeat center center;
     background-size: cover; 
-    margin-right: .5rem;
+    margin-right: .5em;
     vertical-align: middle;
 }
 .memory{
@@ -128,11 +134,11 @@ body{
 .memory th::before{
     content: '';
     display: inline-block;
-    width: 1.2rem;
-    height: 1.2rem; 
+    width: 1.1em;
+    height: 1.1em; 
     background: url('./assets/images/icon-memory.svg') no-repeat center center;
     background-size: cover; 
-    margin-right: .5rem;
+    margin-right: .5em;
     vertical-align: middle;
 }
 .verbal{
@@ -144,11 +150,11 @@ body{
 .verbal th::before{
     content: '';
     display: inline-block;
-    width: 1.2rem;
-    height: 1.2rem; 
+    width: 1.1em;
+    height: 1.1em; 
     background: url('./assets/images/icon-verbal.svg') no-repeat center center;
     background-size: cover; 
-    margin-right: .5rem;
+    margin-right: .5em;
     vertical-align: middle;
 }
 .visual{
@@ -160,29 +166,29 @@ body{
 .visual th::before{
     content: '';
     display: inline-block;
-    width: 1.2rem;
-    height: 1.2rem; 
+    width: 1.1em;
+    height: 1.1em; 
     background: url('./assets/images/icon-visual.svg') no-repeat center center;
     background-size: cover; 
-    margin-right: .5rem;
+    margin-right: .5em;
     vertical-align: middle;
 }
 td{
-    font-size: .9rem;
+    font-size: .9em;
     font-weight: bold;
 }
 .continue{
     display: block;
     background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    margin: .7rem 10%;
-    width: 80%;
-    height: 1.5rem;
-    border-radius: 1.5rem;
-    padding :.5rem;
+    margin: .9em .7em;
+    width: 90%;
+    height: 2em;
+    border-radius: 1.5em;
+    padding :.5em;
     text-align: center;
     text-decoration: none;
     color:white;
-    font-size: .9rem;
+    font-size: .9em;
 }
 .continue:active,.continue:visited {
     background-image: linear-gradient( hsl(224, 30%, 27%), hsl(224, 30%, 27%));
@@ -193,18 +199,28 @@ td{
     }
     .theResult{
         width: 100%;
-        border-top-left-radius: 0rem;
-        border-top-right-radius: 0rem;
-        margin-top:0 ;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-top: 5%;
+    }
+    .theResult h1{
+        margin-top: 10em;
+        margin-bottom: 1em;
     }
     .summary{
         width: 100%;
-        height: 40%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-top: -.5em ;
+    }
+    .summary th{
+      width: 35em;
+    }
+    .summary td{
+      text-align: right;
+    }
+    .summary tr{
+        margin: 1em;
     }
 
-    .score{
-        width:30%;
-        height: 40%;
-        border-radius: 50%;
-    }
 }
